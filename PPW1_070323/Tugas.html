@@ -5,14 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tugas Praktikum</title>
+    <style>
+        body {
+            background-image: url("bg.png");
+            background-repeat: no-repeat;
+            background-size: 80%;
+            background-position: 50%;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 4%;
+            width: 30%;
+        }
+        .fieldset {
+            background-color: rgba(255, 255, 255, 0.426);
+            height: auto;
+        }
+        .button {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 8px;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <p><center><img src="ugm.png" height="150"></center>
-    <h3 align="center">FORMULIR PENDATAAN MAHASISWA</h3>
-    <fieldset>
-        <legend>
-            <b>Formulir</b>
-        </legend>
+    <br><br>
+    <center><img src="sv.png" width="200"></center>
+    <fieldset class="fieldset center">
+        <legend align="center"><b>FORMULIR UPDATE DATA</b></legend>
         <form>
             Nama : <br>
             <input type="text" size="64"> <br>
@@ -29,35 +53,37 @@
                     <td></td>
                     <td><input type="radio" name="sex" value="perempuan">Perempuan</td>
                 </tr>
-            </table> 
+            </table>
             <hr width="100%" size="1" align="left">
             <table>
                 <tr>
                     <td><b>Data Keluarga</b></td>
+                    <td colspan="2"><hr width="100%" size="2" color="gray"></td>
                 </tr>
                 <tr>
                     <td>Nama Orang Tua/Wali</td>
                     <td>:</td>
-                    <td><input type="text" size="40"</td>
+                    <td><input class="field" type="text" size="40"></td>
                 </tr>
                     <td>Alamat</td>
                     <td>:</td>
-                    <td><input type="text" size="40"</td>
+                    <td><input type="text" size="40"></td>
                 <tr>
                     <td>Nomor Telepon</td>
                     <td>:</td>
-                    <td><input type="text" size="40"</td>
+                    <td><input type="text" size="40"></td>
                 </tr>
                 <tr>
                     <td></td>
                 </tr>
                 <tr>
                     <td><b>Data Diri</b></td>
+                    <td colspan="2"><hr width="100%" size="2" color="gray"></td>
                 </tr>
                 <tr>
                     <td>Alamat sekarang</td>
                     <td>:</td>
-                    <td><input type="text" size="40"</td>
+                    <td><input type="text" size="40"></td>
                 </tr>
                 <tr>
                     <td>Jenis tempat tinggal</td>
@@ -71,9 +97,10 @@
                 </tr>
             </table>
             <hr width="100%" size="1" align="left">
-            Jika data sudah sesuai, silakan tekan tombol submit
-            <br>
-            <input type="submit" value="Submit">
+            <p><input type="checkbox" name="verification">Data yang saya masukkan sudah benar</p>
+            <input class="button" type="submit" value="Kirim">
+            <!-- <br> -->
+            <input class="button" type="reset" value="Reset">
         </form>
     </fieldset>
 </body>
