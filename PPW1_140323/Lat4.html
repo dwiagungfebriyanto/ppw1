@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemen latar depan dan latar belakang</title>
+    <style type="text/css">
+        img.x1 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+        }
+        img.x2 {
+            position: absolute;
+            left: 1cm;
+            top: 100;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <p><b>Catatan:</b>Browser jadul tidak mendukung "z-index".</p>
+    <h1>Sepertinya Heading ini terhalang oleh gambar</h1>
+    <img class="x1" src="ugm.png" width="100">
+    <p>
+        Nilai default z-index adalah 0. Z-index 1 memiliki prioritas lebih tinggi,
+        sedangkan Z-index -1 memiliki prioritas lebih rendah.
+    </p>
+    <p></p>
+    <img class="x2" src="ugm.png" width="100">
+    <p>
+        Sekarang Anda bisa membandingkan dengan tampilan di bagian bawah ini.
+        Apakah masih terhalang gambar?
+    </p>
+</body>
+</html>
