@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+Pro&display=swap');
 
 body {
-    background-image: url('https://images.pexels.com/photos/448748/pexels-photo-448748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-image: url('../assets/img/section-1-background.jpeg');
     background-repeat: no-repeat;
     background-size: 100% 100%; 
     height: 100vh;
@@ -27,11 +27,17 @@ header {
 }
 
 .section-2-btn {
+    vertical-align: bottom;
     background-color: #06BEE1;
-    width: 150px;
     height: 40px;
     border: 0;
     border-radius: 50px;
+}
+
+.container-section-2 {
+    margin-top: 30px;
+    padding: 0;
+    height: 60%;
 }
 
 .section-2-btn:hover {
@@ -39,12 +45,34 @@ header {
     color: white;
 }
 
+#editButton {
+    margin-left: 5px;
+    color: #1768AC;
+    background-color: white;
+    border: 0;
+    width: fit-content;
+    height: 40px;
+}
+
+#editButton:hover {
+    text-decoration: underline;
+}
+
 .section-3-bg {
-    background-image: url('https://cdn.pixabay.com/photo/2017/09/16/16/05/sea-2755901_960_720.jpg');
+    background-image: url('../assets/img/section-3-background.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 100vh;
-    padding: 20vh;
+    padding-top: 20vh;
+}
+
+@media (max-width: 768px) {
+    .section-3-bg {
+        background-repeat: repeat-y;
+        background-size: 200%;
+        height: fit-content;
+        padding-bottom: 50px;
+    }
 }
 
 .icon {
@@ -104,14 +132,13 @@ html, body {
     height: 40px;
     border: 0;
     border-radius: 50px;
-    background-color: rgba(255, 255, 255, 0.429);
-    backdrop-filter: blur(20px);
+    background-color: #03256c;
+    color: white;
 }
 
 #btn:hover {
     color: white;
-    background-color: rgba(240, 248, 255, 0);
-    backdrop-filter: blur(20px);
+    background-color: #1768AC;
 }
 
 .row button {
@@ -150,19 +177,32 @@ table {
 input {
     margin: 15px;
     margin-left: 40px;
-    color: black;
-    background-color: rgb(221, 221, 221);
-    border-color: black;
+    border-color: #2541B2;
     width: 300px;
     height: 40px;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .text-area {
     width: 300px;
     height: 100px;
     vertical-align: top;
+}
+
+#showButton {
+    margin-top: 20px;
+    margin-left: 40px;
+    background-color: #2541B2;
+    color: white;
+}
+
+#showButton:hover {
+    background-color: #06BEE1;   
+}
+
+#hiddenElement {
+    margin: 40px;
 }
 
 .button {
